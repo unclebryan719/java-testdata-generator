@@ -40,8 +40,11 @@ public class InsertSQLGeneratorTest {
             e.printStackTrace();
         }
 
+//        this.generator = new InsertSQLGenerator(this.url, this.username,
+//            this.password, "t_c_metadata");
         this.generator = new InsertSQLGenerator(this.url, this.username,
-            this.password, "data_order_ext");
+            this.password, "t_c_material");
+        //
     }
 
     @AfterTest
@@ -54,7 +57,9 @@ public class InsertSQLGeneratorTest {
      * {@link cn.binarywang.tools.generator.InsertSQLGenerator#generateSQL()}.
      */
     public void testGenerateSQL() {
-        System.err.println(this.generator.generateSQL());
+        for(int i=0; i<1; i++){
+            System.err.println(this.generator.generateSQL());
+        }
     }
 
     /**
